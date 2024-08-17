@@ -4,21 +4,14 @@
     {
         static void Main(string[] args)
         {
-            string myName;
-            byte myAge;
-            bool pet;
-            float shoeSize;
-            myName = "Slavik";
-            myAge = 30;
-            pet = true;
-            shoeSize = 42.5F;
-
-            
-            Console.WriteLine($"My name is {myName}");
-            Console.WriteLine($"My age is {myAge}");
-            Console.WriteLine($"Do i have a pet? {pet}");
-            Console.WriteLine($"My shoe size is {shoeSize}");
-
+            Console.Write("Enter your name: ");
+            var name = Console.ReadLine();
+            Console.Write("Enter your age: ");
+            var age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Your name is {name} and your age is {age}");
+            Console.Write("Enter your birthdate: ");
+            var birthdate = Console.ReadLine();
+            Console.WriteLine("Your birthdate is {0}", birthdate);
             Console.ReadKey();
         }
     }
